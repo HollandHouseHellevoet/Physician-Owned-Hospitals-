@@ -148,7 +148,7 @@ export default function StatePage({ params }: { params: { state: string } }) {
                 )}
                 {data.summary.underDevelopment > 0 && (
                   <p className="text-text-sub text-base font-body leading-relaxed">
-                    {data.summary.underDevelopment} facility{data.summary.underDevelopment !== 1 ? " is" : "s are"} currently
+                    {data.summary.underDevelopment} {data.summary.underDevelopment === 1 ? "facility is" : "facilities are"} currently
                     under development in the state.
                   </p>
                 )}

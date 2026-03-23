@@ -1,4 +1,13 @@
-"use client";
+// v2: Direct Stripe payment links — no JS checkout, no alerts, no API keys
+const TIER_1_STATES = [
+  "TX", "LA", "OK", "KS", "IN", "OH", "SD", "CA", "AZ", "PA", "WI", "NE", "AR", "ID", "CO",
+];
+
+const PAYMENT_LINKS = {
+  tier1: "https://buy.stripe.com/7sY28r75ag9sf0y3ttdjO00",
+  tier2: "https://buy.stripe.com/fZudR93SY5uO8Ca8NNdjO01",
+  allAccess: "https://buy.stripe.com/eVq7sL0GMf5o4lU5BBdjO02",
+};
 
 export function PaywallOverlay({
   stateCode,
@@ -13,14 +22,7 @@ export function PaywallOverlay({
   price: number;
   tier: 1 | 2;
 }) {
-  const handleCheckout = (priceType: "state" | "allAccess") => {
-    // Placeholder: Stripe checkout will be configured with live keys
-    const message =
-      priceType === "state"
-        ? `Stripe checkout for ${stateName} dossier ($${price}) will be configured with live Stripe keys.`
-        : "Stripe checkout for All-Access ($6,000/year) will be configured with live Stripe keys.";
-    alert(message);
-  };
+  const stateLink = tier === 1 ? PAYMENT_LINKS.tier1 : PAYMENT_LINKS.tier2;
 
   return (
     <div className="mt-12 card p-8 border border-accent/30 text-center">
@@ -32,12 +34,12 @@ export function PaywallOverlay({
         Section 6001 impact analysis, political context, and investment landscape.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <button onClick={() => handleCheckout("state")} className="btn-primary">
+        <a href={stateLink} className="btn-primary">
           {stateName} Dossier &mdash; ${price}
-        </button>
-        <button onClick={() => handleCheckout("allAccess")} className="btn-outline">
-          All-Access &mdash; $6,000/year
-        </button>
+        </a>
+        <a href={PAYMENT_LINKS.allAccess} className="btn-outline">
+          All-Access &mdash; $3,500/year
+        </a>
       </div>
       <p className="mt-4">
         <a

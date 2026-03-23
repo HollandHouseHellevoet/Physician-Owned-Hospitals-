@@ -176,11 +176,11 @@ export function DataExplorerClient({ states }: { states: StateRow[] }) {
             require a paid state dossier or all-access subscription.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/states/TX/" className="btn-primary">
-              View Sample State (Texas)
+            <Link href="/states/" className="btn-primary">
+              Browse All States
             </Link>
-            <a href="mailto:intel@rojasreport.com" className="btn-outline">
-              Enterprise Access
+            <a href="https://buy.stripe.com/eVq7sL0GMf5o4lU5BBdjO02" className="btn-outline">
+              All-Access &mdash; $3,500/year
             </a>
           </div>
         </div>
