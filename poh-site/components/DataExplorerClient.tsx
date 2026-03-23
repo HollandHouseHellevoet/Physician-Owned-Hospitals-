@@ -179,8 +179,8 @@ export function DataExplorerClient({ states }: { states: StateRow[] }) {
             <Link href="/states/TX/" className="btn-primary">
               View Sample State (Texas)
             </Link>
-            <a href="mailto:intel@rojasreport.com" className="btn-outline">
-              Enterprise Access
+            <a href="https://buy.stripe.com/eVq7sL0GMf5o4lU5BBdjO02" className="btn-outline">
+              All-Access &mdash; $3,500/year
             </a>
           </div>
         </div>

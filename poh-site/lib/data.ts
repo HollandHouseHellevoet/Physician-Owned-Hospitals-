@@ -220,7 +220,7 @@ export function getStateData(stateCode: string): StateData {
     hospitalCount: summary.totalListed,
     brief: getStateBrief(stateCode),
     tier: tier as 1 | 2,
-    price: tier === 1 ? 500 : 75,
+    price: tier === 1 ? 300 : 50,
     attritionRate,
   };
 }
