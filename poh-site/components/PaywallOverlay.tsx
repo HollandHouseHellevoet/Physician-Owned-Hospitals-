@@ -1,3 +1,4 @@
+// v2: Direct Stripe payment links — no JS checkout, no alerts, no API keys
 const TIER_1_STATES = [
   "TX", "LA", "OK", "KS", "IN", "OH", "SD", "CA", "AZ", "PA", "WI", "NE", "AR", "ID", "CO",
 ];

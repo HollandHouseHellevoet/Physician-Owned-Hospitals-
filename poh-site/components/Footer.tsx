@@ -52,7 +52,7 @@ export function Footer() {
             <ul className="space-y-2">
               {[
                 { label: "Investigation", href: "/investigation/" },
-                { label: "State Dossiers", href: "/states/TX/" },
+                { label: "State Dossiers", href: "/states/" },
                 { label: "Data Explorer", href: "/data-explorer/" },
                 { label: "Evidence", href: "/evidence/" },
               ].map((item) => (
