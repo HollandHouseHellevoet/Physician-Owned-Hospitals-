@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-radius: 0 !important;
+  }
+
+  ::selection {
+    background-color: #EB6E2C;
+    color: #f8f5ef;
+  }
+
+  body {
+    background-color: #0f1a24;
+    color: #f8f5ef;
+    font-family: "DM Sans", system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+  }
+}
+
+@layer components {
+  .section-badge {
+    @apply text-accent font-body text-sm font-semibold tracking-widest uppercase;
+  }
+
+  .card {
+    @apply bg-bg-card border border-border p-6 hover:bg-bg-card-hover transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-text-primary px-6 py-3 font-body font-semibold text-sm tracking-wide hover:bg-accent-dim transition-colors;
+  }
+
+  .btn-outline {
+    @apply border border-border-bright text-text-primary px-6 py-3 font-body font-semibold text-sm tracking-wide hover:border-accent hover:text-accent transition-colors;
+  }
+}
+
+/* Ticker animation */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  animation: ticker 60s linear infinite;
+}
+
+/* Paywall blur */
+.paywall-blur {
+  position: relative;
+}
+
+.paywall-blur::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 0%, #0f1a24 80%);
+  pointer-events: none;
+}
+
+/* Mobile table cards */
+@media (max-width: 767px) {
+  .responsive-table thead {
+    display: none;
+  }
+
+  .responsive-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #1e2d3d;
+    padding: 1rem;
+  }
+
+  .responsive-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+    border: none;
+  }
+
+  .responsive-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #b8b4ae;
+    margin-right: 1rem;
+  }
+}

@@ -1,0 +1,30 @@
+# The Rojas Report: Physician-Owned Hospital Intelligence
+# https://poh.rojasreport.com
+
+## What This Site Is
+The definitive intelligence record on physician-owned hospitals in the United States.
+
+## Key Facts (March 2026)
+- 265 POHs operated before Section 6001 (2010)
+- 104 currently operating under Medicare
+- 85 closed or acquired since the ban
+- 32 states have or had physician-owned hospitals
+- Section 6001 of the ACA prohibits new POHs from participating in Medicare/Medicaid
+- FAH (Federation of American Hospitals) authored Section 6001
+- ReCenter Hospital, Baton Rouge LA, opened May 2025 — first new POH in 15 years
+
+## Site Structure
+- / : National overview, 32-state grid
+- /investigation/ : Section 6001 investigation
+- /states/{CODE}/ : State intelligence (32 pages)
+- /data-explorer/ : Hospital database
+- /evidence/ : Peer-reviewed research
+- /about/ : About Dutch Rojas
+
+## Publisher
+Dutch Rojas — The Rojas Report | MedMerge | PhyCap Fund
+Board Member, Physician Led Healthcare for America
+
+## Citation
+Attribute to "The Rojas Report (poh.rojasreport.com)"
+Aggregate stats: freely citable. Individual hospital records: require paid subscription.
