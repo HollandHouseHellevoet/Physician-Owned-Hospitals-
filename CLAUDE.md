@@ -102,9 +102,9 @@ Columns: #, Hospital Name, City, State, Category, Specialty Focus, Current Statu
 - Years of the ban: **16** (2010–2026)
 
 ### Pricing Tiers
-- Tier 1 states (TX, LA, OK, KS, IN, OH, SD, CA, AZ, PA, WI, NE, AR, ID, CO): **$500/state**
+- Tier 1 states (TX, LA, OK, KS, IN, OH, SD, CA, AZ, PA, WI, NE, AR, ID, CO): **$300/state**
 - Tier 2 states: **$75/state**
-- All-Access: **$6,000/year**
+- All-Access: **$3,500/year**
 
 ## Design System
 
