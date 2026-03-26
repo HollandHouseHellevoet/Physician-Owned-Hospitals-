@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   title: "Physician-Owned Hospital Intelligence | The Rojas Report",
   description:
     "The definitive intelligence record on physician-owned hospitals in the United States. 265 built. 104 survive. 85 eliminated. The complete record.",
+  twitter: {
+    card: "summary_large_image",
+    site: "@dutchrojas",
+    creator: "@dutchrojas",
+  },
 };
 
 export default function RootLayout({

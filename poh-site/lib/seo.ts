@@ -23,6 +23,8 @@ export function generatePageMetadata({ title, description, path }: SEOInput): Me
     },
     twitter: {
       card: "summary_large_image",
+      site: "@dutchrojas",
+      creator: "@dutchrojas",
       title,
       description,
     },
