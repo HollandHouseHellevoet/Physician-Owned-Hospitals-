@@ -23,7 +23,7 @@ export default function HomePage() {
       <section
         className="min-h-[90vh] flex items-center justify-center relative bg-bg-deep"
         style={{
-          backgroundImage: "url('/images/hero-hospital.jpg')",
+          backgroundImage: "url(/images/hero-hospital.png)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
