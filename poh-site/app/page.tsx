@@ -20,8 +20,20 @@ export default function HomePage() {
       <Ticker />
 
       {/* Hero */}
-      <section className="min-h-[90vh] flex items-center justify-center bg-bg-deep">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      <section
+        className="min-h-[90vh] flex items-center justify-center relative bg-bg-deep"
+        style={{
+          backgroundImage: "url('/images/hero-hospital.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div
+          className="absolute inset-0"
+          style={{ backgroundColor: "rgba(26, 42, 58, 0.6)" }}
+        />
+        <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h1 className="font-headline text-5xl sm:text-6xl md:text-7xl font-bold leading-tight">
             <span className="text-text-primary">The Slow Death of</span>
             <br />
