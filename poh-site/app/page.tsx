@@ -1,8 +1,23 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Ticker } from "@/components/Ticker";
 import { StateCard } from "@/components/StateCard";
 import { getAllStatesData, STATS } from "@/lib/data";
 import { organizationJsonLd } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://poh.rojasreport.com/",
+  },
+  openGraph: {
+    title: "Physician-Owned Hospital Intelligence | The Rojas Report",
+    description:
+      "The definitive intelligence record on physician-owned hospitals in the United States. 265 built. 104 survive. 85 eliminated. The complete record.",
+    url: "https://poh.rojasreport.com/",
+    type: "website",
+    images: ["/images/hero-hospital.png"],
+  },
+};
 
 export default function HomePage() {
   const states = getAllStatesData();
@@ -20,10 +35,21 @@ export default function HomePage() {
       <Ticker />
 
       {/* Hero */}
-      <section className="min-h-[90vh] flex items-center justify-center bg-bg-deep">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      <section
+        className="min-h-[90vh] flex items-center justify-center relative"
+        style={{
+          backgroundImage: "url(/images/hero-hospital.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div
+          className="absolute inset-0"
+          style={{ backgroundColor: "rgba(26,42,58,0.6)" }}
+        />
+        <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h1 className="font-headline text-5xl sm:text-6xl md:text-7xl font-bold leading-tight">
-            <span className="text-text-primary">The Slow Death of</span>
+            <span className="text-text-primary">The Slow Death of </span>
             <br />
             <span className="text-accent">Physician-Owned Hospitals</span>
           </h1>
