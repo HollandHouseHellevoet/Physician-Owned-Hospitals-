@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://poh.rojasreport.com/sitemap.xml
