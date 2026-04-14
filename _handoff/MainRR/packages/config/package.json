@@ -1,0 +1,22 @@
+{
+  "name": "@rojasreport/config",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Shared config: Tailwind preset, TS base, brand tokens.",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./tailwind-preset": "./src/tailwind-preset.ts",
+    "./tokens": "./src/tokens.ts",
+    "./fonts": "./src/fonts.ts"
+  },
+  "scripts": {
+    "lint": "echo 'config: no lint'",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.10",
+    "typescript": "5.5.4"
+  }
+}

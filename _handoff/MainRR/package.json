@@ -1,0 +1,23 @@
+{
+  "name": "mainrr",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The Rojas Report monorepo — hub, desks, and shared chassis.",
+  "packageManager": "pnpm@9.12.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev:hub": "pnpm --filter @rojasreport/hub dev",
+    "dev:console": "pnpm --filter @rojasreport/console dev",
+    "build": "pnpm -r build",
+    "build:hub": "pnpm --filter @rojasreport/hub build",
+    "build:console": "pnpm --filter @rojasreport/console build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "clean": "pnpm -r exec rm -rf .next out node_modules/.cache && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4"
+  }
+}

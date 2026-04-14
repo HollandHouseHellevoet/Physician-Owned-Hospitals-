@@ -1,0 +1,27 @@
+{
+  "name": "@rojasreport/seo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "SEO + LLM primitives: metadata, JSON-LD, sitemap, robots, llms.txt.",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./metadata": "./src/metadata.ts",
+    "./jsonld": "./src/jsonld.ts",
+    "./llms": "./src/llms.ts",
+    "./sitemap": "./src/sitemap.ts",
+    "./robots": "./src/robots.ts"
+  },
+  "scripts": {
+    "lint": "echo 'seo: no lint'",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "next": "^14.2.0"
+  },
+  "devDependencies": {
+    "next": "14.2.35",
+    "typescript": "5.5.4"
+  }
+}

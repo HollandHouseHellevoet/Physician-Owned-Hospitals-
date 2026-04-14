@@ -1,0 +1,28 @@
+# Rojas Report
+
+> Standing intelligence on who pays whom in American healthcare. A reference console, not a newsfeed, for the lobbyist, the physician, the lawmaker, and the voter.
+
+The Rojas Report is the central hub for 23 desks of standing healthcare-policy intelligence. It maps the relationships between trade associations, payers, manufacturers, hospitals, physicians, lobbyists, donors, lawmakers, and the laws that bind them.
+
+## Core reference
+
+- [All 23 desks](https://rojasreport.com/desks/): The full registry of healthcare-policy desks
+- [Method](https://rojasreport.com/method/): How sources are gathered, verified, and cited
+- [About](https://rojasreport.com/about/): Editorial mission and provenance
+
+## Live desks
+
+- [Ways & Means](https://waysandmeans.rojasreport.com): Tax writing and entitlement financing
+- [POH](https://poh.rojasreport.com): Physician-owned hospitals (189 tracked, 32 states)
+- [Academic](https://academic.rojasreport.com): AMCs, NIH grants, residency, teaching payments
+- [FAH](https://fah.rojasreport.com): Federation of American Hospitals
+- [AHA](https://aha.rojasreport.com): American Hospital Association
+- [HAC](https://hac.rojasreport.com): Healthcare Advisory Committees
+- [CON Laws](https://con-laws.rojasreport.com): State Certificate of Need regimes
+
+## For readers
+
+- [The Lobbyist](https://rojasreport.com/readers/lobbyist/): Who does AHIP pay, and who pays AHIP?
+- [The Physician](https://rojasreport.com/readers/physician/): Can I build a micro-hospital next to this POH?
+- [The Lawmaker](https://rojasreport.com/readers/lawmaker/): Who could be an ally on 340B reform?
+- [The Voter](https://rojasreport.com/readers/voter/): What is Abbott Labs spending in my district?
